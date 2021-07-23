@@ -1,0 +1,448 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;/* cuon trang dep hon*/
+    font-family: Arial, Helvetica, sans-serif;/*font kieu chu*/
+}
+/* 
+1.tu ngoai vao trong
+2.tu tren xuong duoi
+3.tong quan den chi tiet
+*/
+/* 
+1.vi tri
+2.kich thuoc
+3.mau sac
+4.kieu dang(kieu chu ,tron,vuong....)
+ */
+ .clear{
+    clear: both;/*giai quyet van de float*/
+ }
+ .text-while{
+     color: white !important;
+ }
+ .text-center{
+     text-align: center !important;
+ }
+ .row::after{
+        content: "";
+        display:block;
+        clear: both;
+
+ }
+ .row{
+  margin-left: -8px;
+   margin-right: -8px;
+ }
+ .column{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+ }
+ .column-full{
+     width: 100%;
+ }
+ .column-third{
+     width: 33.3333%;
+ }
+.column-twice{
+    width: 50%;
+}
+.mar-top8{
+    margin-top: 8px !important;
+}
+.mar-top16{
+    margin-top: 16px !important;
+}
+.mar-top32{
+    margin-top: 32px !important;
+}
+.btn{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.btn:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.pull-right{
+    float: right !important;
+}
+/* #main {
+} */
+
+#header {
+width: 100%;
+height: 46px;
+background-color: black;
+position: fixed; /*co dinh thanh header */
+top: 0px;
+right: 0px;
+left: 0px;
+z-index: 1;/*co dinh thanh header*/
+/* overflow: hidden;an nhung the con vuot qua the cha */
+}
+#nav{
+    display: inline-block;/*div di den dau dong khung toi do*/
+}
+#nav, .subnav{
+    list-style-type: none;/*bo dau cham dau moi dong*/
+    
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+    /* width: 100%; */
+    
+    position: relative;
+}
+#nav > li >a{
+    color: white;
+    text-transform: uppercase;/* chu hoa*/
+}
+#nav li a{
+    text-decoration: none;/*loai bo gach duoi chan chu*/
+    line-height: 46px;
+    padding: 0px  24px;
+   display: block;
+    
+    
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav >li:hover >a,
+#nav .subnav li:hover a{
+    color: black;
+    background-color: #ccc;
+    
+}
+#nav .subnav{
+    
+display: none;
+min-width: 160px;
+position: absolute;
+background-color: white;
+box-shadow: 0px 0px 10px rgba(0,0,0,0.3);/*khung bong mo xung quanh*/
+
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+    
+}
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+#header .mobile-menu{
+    position: absolute;
+    top: 0px;
+    right: 0px ;
+    display: none;
+}
+#header .mobile-menu,
+#header .isearch{
+    float: right;
+    padding: 0 23px;
+}
+#header .isearch:hover{
+    background-color: red;
+    cursor: pointer;/*con tro khi di chuot vao*/
+}
+#header .mobile-menu .menu-icon:hover{
+    color: black;
+}
+#header .mobile-menu:hover{
+    background-color:#ccc
+}
+#header .menu-icon,
+#header .nav-search{
+    color: white;
+    font-size: 16px;
+    line-height: 46px;/*chieu cao dong chu=padding*/
+
+}
+#slider {
+    position: relative;
+margin-top: 46px;
+padding-top: 50%;
+background: url('../img/slider/chicago.jpg') top center / cover no-repeat;
+}
+#slider .text-content{
+    position: absolute;
+    color: #ccc;
+    text-align: center;/*dich dong chu ra trung tam*/
+    bottom: 47px;
+    width: 100%;
+
+}
+#slider .text-heading{
+    margin-bottom: 25px;
+    
+}
+/* #content { */
+/* } */
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0px 112px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+#content .heading-section{
+    font-size: 30px;
+    font-weight: 500;/*do mong va day cua chu*/
+    text-align: center;
+    letter-spacing: 4px;/*khoang cach giua cac chu*/
+}
+#content .heading-sub-section{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-style: italic;/*chu nghieng*/
+    opacity: 0.6;/*do mo chu,gia tri tu 0--->1*/
+}
+#content .about-text{
+    font-size: 15px;
+    text-align: justify;/*can deu hai ben dong chu*/
+    line-height: 1.4;/*1.4 cho tieng anh,1.6 cho tieng viet*/
+}
+#content .member-list{
+    margin-top: 32px;
+}
+
+
+#content .member-name{
+    font: 15px;
+    margin-bottom: 15px;
+}
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;/*vong bo om xung quanh anh*/
+
+}
+/* tour section*/
+ .tour-section{
+    background-color: black;
+}
+.ticket-list{
+background-color: white;
+margin-top: 40px;
+
+}
+.ticket-list li{
+font-size: 15px;
+padding: 11px 16px;
+border-bottom: 1px solid #ccc;
+}
+.ticket-list .sold-out{
+    background-color: red;
+    color: white;
+    padding: 3px 4px;
+    margin-left: 15px;
+}
+.ticket-list .quantiny{
+    background-color: black;
+    color: white;
+    float: right;
+    border-radius: 50%;/* 50%;tao vong tron  */
+    padding: 3px 8px;
+    margin-right: 16px;
+    margin-top:-4px;
+}
+.place-content{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    padding: 0px 16px 16px;
+    
+}
+.place-list{
+    margin-top:16px;
+    
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+opacity: 0.6;
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 0px;
+}
+.place-time{
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+.place-desc{
+    margin-bottom: 15px;
+    line-height: 1.4;
+
+}
+
+/* contact */
+.contact-content{
+    margin-top: 47px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.6;
+}
+.contact-info i[class*="ti-"] {/*phan [] de chon tat ca cac class co chu ti*/
+    width: 30px;
+    display: inline-block;
+
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.map-section img{
+    width: 100%;
+}
+
+#footer {
+padding: 64px 12px;
+text-decoration: none;
+text-align: center;
+
+}
+#footer .social-list{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+#footer .social-list a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+#footer .social-list a:hover,
+#footer .copyright a:hover{
+    color: rgba(0,0,0,0.3);
+}
+#footer .copyright a{
+    color: rgba(0,0,0,0.6);
+    
+}
+#footer .copyright{
+    font-size: 15px;
+    color: rgba(0,0,0,0.6);
+}
+
+.modal{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.3);
+    align-items: center;/*the con nam giua chieu cao the cha*/
+    justify-content: center;/*the con nam giua chieu ngang the cha*/
+    display: none;
+}
+.modal.open{
+    display: flex;
+}
+.modal .modal-container{
+    background-color: white;
+    width: 900px;
+    max-width: calc(100%-36px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease .5s; /*dung cho keyfame*/
+}
+.modal-header{
+background-color: #009688;
+height: 130px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+color: white;
+}
+.modal-heading-icon{
+    margin-right: 16px;
+}
+.modal-close{
+    position: absolute;
+    right:0px;
+    top: 0px;
+    padding: 12px;
+    color: #ccc;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.modal-close:hover{
+    background-color: #ccc;
+    color: black;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input{
+    border: 1px #ccc solid;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+#buy-tickets{
+    background-color: #009688;
+    width: 100%;
+    padding: 18px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#buy-tickets:hover{
+    background-color: #ccc;
+    color: black;
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+
+}
+.modal-footer a{
+    color: #219;
+}
+@keyframes modalFadeIn{ /*giup modal truot xuong dep hon*/
+    from{
+        opacity: 0;
+    transform: translateY(-140px)
+    }
+    to{
+        opacity: 1;
+    transform: translateY(0)
+    }
+}

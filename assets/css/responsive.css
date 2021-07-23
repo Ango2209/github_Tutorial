@@ -1,0 +1,76 @@
+/* mobile & tablet */
+@media (max-width: 63.9375em){
+    .btn{
+        padding: 15px 15px;
+    }
+.contact-form .form-control{
+    padding: 15px;
+}
+.social-list{
+    font-size: 48px;
+}
+#footer .social-list a{
+    margin: 0 8px;
+}
+#footer .copyright a{
+    padding: 12 0px;
+}
+.contact-info{
+ line-height: 2;
+}
+}
+/* Mobile */
+@media (max-width:46.25em){ /* len gg de chuyen doi px thanh rem (convert)*/
+    .s-col-full,
+    .s-full-width
+    {
+        width: 100%;
+    }
+    .s-mar-top8{
+        margin-top: 8px;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header .mobile-menu{
+        display: block;
+    }
+    #header .isearch{
+        display: none;
+    }
+    #nav{
+        display: block;
+    }
+    #nav > li{
+     display: block;
+    }
+    #nav >li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial; /*phan position mac dinh*/
+        background-color: #333;
+
+    }
+    #nav .subnav a{
+        color: white;
+        padding: 5px 41px;
+    }
+    .contact-form .form-control{
+        font-size: 16px;
+        padding: 15px;
+    }
+     .contact-info{
+         line-height: 2;
+     }
+     .contact-submit-btn{
+         font-size: 17px;
+     }
+    
+    #content .member-img{
+        width: 60%;
+    }
+    .contact-form{
+        margin-top: 16px;
+    }
+}
