@@ -178,9 +178,15 @@ box-shadow: 0px 0px 10px rgba(0,0,0,0.3);/*khung bong mo xung quanh*/
 }
 #slider {
     position: relative;
+<<<<<<< HEAD
     margin-top: 46px;
     padding-top: 50%;
     background: url('../img/slider/newyork2.jpg') top center / cover no-repeat;
+=======
+margin-top: 46px;
+padding-top: 50%;
+background: url('/assets/img/slider/chicago.jpg') top center / cover no-repeat;
+>>>>>>> 4dfc763a8c851d8a4b370047187cfb68fea80685
 }
 #slider .text-content{
     position: absolute;
